@@ -1,2 +1,11 @@
-<h1>Car#show</h1>
-<p>Find me in app/views/car/show.html.erb</p>
+<div class="banner-show">
+
+</div>
+
+<h2><%= @car.brand %>-<%= @car.model %></h2>
+<p><%= @car.address %></p>
+<div>
+  <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar-large", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+</div>
+<p><%= @car.description %></p>
+<p><%= @car.price %></p>
