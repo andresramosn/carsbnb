@@ -21,7 +21,7 @@ puts 'Creating cars'
   address = ["bailen 152, barcelona", "corsega 523, barcelona", "plaza real 100", "mallorca 1432"]
   #create cars
   user = User.create(email: random_email, password: random_password)
-  car = Car.create(price: random_price, model: model.sample, brand: brand.sample, address: address.sample, description: "lorem ipsum", photo: "example_url", user_id: user.id)
+  car = Car.create(price: random_price, model: model.sample, brand: brand.sample, address: address.sample, description: "lorem ipsum", photo: "https://images.pexels.com/photos/905554/pexels-photo-905554.jpeg?cs=srgb&dl=automobile-automotive-car-905554.jpg&fm=jpg", user_id: user.id)
 end
 
 puts "#{User.count} users created & #{Car.count} cars created"
