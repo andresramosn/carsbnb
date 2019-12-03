@@ -10,21 +10,21 @@ Car.destroy_all
 User.destroy_all
 
 # restaurants
-puts 'Creating cars'
+# puts 'Creating cars'
 
-5.times do |_x|
-  random_email = ("a".."z").to_a.sample(10).join + "@gmail.com"
-  random_password = (1..99).to_a.sample(8).join
-  random_price = (1..9).to_a.sample(4).join.to_i
-  brand = ["Toyota", "Kia", "Renault", "Seat", "BMW"]
-  model = ["x1", "x2", "x3", "x4"]
-  address = ["bailen 152, barcelona", "corsega 523, barcelona", "plaza real 100", "mallorca 1432"]
-  #create cars
-  user = User.create(email: random_email, password: random_password)
-  car = Car.create(price: random_price, model: model.sample, brand: brand.sample, address: address.sample, description: "lorem ipsum", photo: "https://images.pexels.com/photos/905554/pexels-photo-905554.jpeg?cs=srgb&dl=automobile-automotive-car-905554.jpg&fm=jpg", user_id: user.id)
-end
+# 5.times do |_x|
+#   random_email = ("a".."z").to_a.sample(10).join + "@gmail.com"
+#   random_password = (1..99).to_a.sample(8).join
+#   random_price = (1..9).to_a.sample(4).join.to_i
+#   brand = ["Toyota", "Kia", "Renault", "Seat", "BMW"]
+#   model = ["x1", "x2", "x3", "x4"]
+#   address = ["bailen 152, barcelona", "corsega 523, barcelona", "plaza real 100", "mallorca 1432"]
+#   #create cars
+#   user = User.create(email: random_email, password: random_password)
+#   car = Car.create(price: random_price, model: model.sample, brand: brand.sample, address: address.sample, description: "lorem ipsum", photo: "image/upload/v1575393584/lmvvrz3kpo4qevcxm5ns.jpg", user_id: user.id)
+# end
 
-puts "#{User.count} users created & #{Car.count} cars created"
+# puts "#{User.count} users created & #{Car.count} cars created"
 
 
 
