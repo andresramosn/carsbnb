@@ -1,2 +1,13 @@
-<h1>Car#new</h1>
-<p>Find me in app/views/car/new.html.erb</p>
+<h1>Upload your car</h1>
+
+<%= simple_form_for([@car]) do |c| %>
+<%= c.input :brand %>
+<%= c.input :model %>
+<%= c.input :price %>
+<%= c.input :address %>
+<%= c.input :description %>
+<%= c.input :photo_cache, as: :hidden %>
+<%= c.submit  %>
+<% end %>
+
+<p><%= link_to "Back to home", cars_path%></p>
