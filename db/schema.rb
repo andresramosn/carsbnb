@@ -17,9 +17,8 @@ ActiveRecord::Schema.define(version: 2019_12_02_171302) do
 
   create_table "cars", force: :cascade do |t|
     t.integer "price"
-    t.string "model"
-    t.string "brand"
-    t.string "address"
+    t.string "modelbrand"
+    t.string "adress"
     t.string "description"
     t.string "photo"
     t.bigint "user_id"
