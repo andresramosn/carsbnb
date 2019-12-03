@@ -4,7 +4,7 @@
     <% @cars.each do |car|  %>
       <div class="car-card">
         <%= link_to car_path(car) do%>
-        <%= image_tag @car.photo %>
+        <%= cl_image_tag car.photo %>
         <div class="car-price">
           <p><%= car.brand %>  <%= car.model %></p>
           <p>€ <%= car.price %> / day</p>
