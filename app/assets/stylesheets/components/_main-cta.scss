@@ -1,0 +1,14 @@
+.main-cta {
+  color: white;
+  padding: 8px 24px;
+  border-radius: 4px;
+  background: #4A506D;
+  transition: background 0.3s ease;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none !important;
+  &:hover {
+    color: white;
+    background-color: #848aa5;
+  }
+}
