@@ -1,7 +1,7 @@
 .banner-show {
   background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("nissan.jpg");
   background-size: cover;
-  height: 400px;
+  height: 600px;
   // background-size: 100%;
   background-size: cover;
   background-position: top;
@@ -12,6 +12,11 @@
   right: 0;
   z-index: -1;
   width: 100vw;
+  }
+
+  .banner-car-info {
+  color: white;
+
   }
 
 /* show-page-image */

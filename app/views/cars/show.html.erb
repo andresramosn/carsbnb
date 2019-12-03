@@ -1,11 +1,25 @@
-<div class="banner-show">
+<body>
 
+  <div>
+
+  <div class="banner-show">
+
+  </div>
+
+
+    <div class="banner-car-info">
+      <h2><%= @car.brand %>-<%= @car.model %></h2>
+      <p><%= @car.address %></p>
+    </div>
+
+    <div>
+    <img src="" alt="" <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar-large", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>>
+    </div>
+
+  <div>
+  <p><%= @car.description %></p>
+  <p><%= @car.price %></p>
+  </div>
 </div>
 
-<h2><%= @car.brand %>-<%= @car.model %></h2>
-<p><%= @car.address %></p>
-<div>
-  <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar-large", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-</div>
-<p><%= @car.description %></p>
-<p><%= @car.price %></p>
+</body>
