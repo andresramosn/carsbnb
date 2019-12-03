@@ -1,0 +1,22 @@
+.banner {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("https://images.pexels.com/photos/276334/pexels-photo-276334.jpeg?cs=srgb&dl=auto-beach-car-desert-276334.jpg&fm=jpg");
+  background-size: cover;
+  height: 650px;
+  background-size: 100%;
+}
+
+.banner h1 {
+  color: white;
+  padding-top: 80px;
+  font-size: 60px;
+  text-align: center;
+}
+
+.banner p {
+  color: white;
+  margin-top: 8px;
+  // width: fit-content;
+  font-size: 24px;
+  background: #4949528a;
+  text-align: center;
+}
