@@ -1,4 +1,4 @@
-class CarController < ApplicationController
+class CarsController < ApplicationController
   before_action :set_user, only: [:new, :create]
 
   def new
