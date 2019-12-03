@@ -1,21 +1,32 @@
-.container {
+.web-container {
   width: 900px;
   margin: 0 auto;
+  font-size: 24px;
 
 }
 
-.container h1 {
+.web-container h1 {
   color: white;
   padding-top: 80px;
   font-size: 60px;
   text-align: center;
 }
 
-.container p {
+.web-container p {
   color: white;
   margin-top: 8px;
   // width: fit-content;
   font-size: 24px;
   background: #4949528a;
   text-align: center;
+}
+
+
+.web-container .h1-results {
+  color: black;
+  padding-top: 80px;
+  font-size: 32px;
+  text-align: left;
+  padding-top: 5px;
+  margin-bottom: 25px;
 }

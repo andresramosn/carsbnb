@@ -1,0 +1,15 @@
+.car-card {
+  img {
+    height: 100%;
+    width: 100%;
+  }
+  p {
+    color: black;
+    background: #F4F4F4;
+    font-size: 20px;
+  }
+  .car-price {
+    display: flex;
+    justify-content: space-between;
+  }
+}
