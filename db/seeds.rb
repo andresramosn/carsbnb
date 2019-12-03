@@ -7,6 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'Cleaning database'
 Car.destroy_all
+User.destroy_all
 
 # restaurants
 puts 'Creating cars'
@@ -20,5 +21,10 @@ puts 'Creating cars'
   address = ["bailen 152, barcelona", "corsega 523, barcelona", "plaza real 100", "mallorca 1432"]
   #create cars
   user = User.create(email: random_email, password: random_password)
-  car = Car.create(price: random_price, model: model.sample, brand: brand.sample, address: address.sample, description: "lorem ipsum", photo: "example_url"
+  car = Car.create(price: random_price, model: model.sample, brand: brand.sample, address: address.sample, description: "lorem ipsum", photo: "example_url", user_id: user.id)
 end
+
+puts "#{User.count} users created & #{Car.count} cars created"
+
+
+
