@@ -1,6 +1,6 @@
 <h1>Upload your car</h1>
 
-<%= simple_form_for([@car]) do |c| %>
+<%= simple_form_for([@user, @car]) do |c| %>
 <%= c.input :brand %>
 <%= c.input :model %>
 <%= c.input :price %>
