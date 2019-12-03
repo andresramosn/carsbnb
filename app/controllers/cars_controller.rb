@@ -6,6 +6,7 @@ class CarsController < ApplicationController
   end
 
   def create
+
     @car = Car.new(car_params)
     @car.user = @user
     if @car.save
@@ -23,6 +24,7 @@ class CarsController < ApplicationController
   end
 
   def show
+    @car = Car.find(params[:id])
   end
 
   def destroy
