@@ -2,45 +2,20 @@
   <div class="row justify-content-center">
     <div class="col-xs-12 col md-4">
       <h2>Upload your car</h2>
-
-<%= simple_form_for([@user, @car]) do |c| %>
-<%= c.input :brand %>
-<%= c.input :model %>
-<%= c.input :price %>
-<%= c.input :address %>
-<%= c.input :description %>
-<%= c.input :photo %>
-<%= c.input :photo_cache, as: :hidden %>
-<%= c.submit  %>
-<% end %>
-
-
-
-
-
-
-
-<!-- div.container>div.row.justify-content-center>div.col-xs-12.col.md-4 -->
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-xs-12 col md-4">
-      <h2>Log in</h2>
-        <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-        <div class="form-inputs">
-        <%= f.input :email,
-                required: false,
-                autofocus: true,
-                input_html: { autocomplete: "email" } %>
-        <%= f.input :password,
-                required: false,
-                input_html: { autocomplete: "current-password" } %>
-        <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-          </div>
+      <%= simple_form_for([@user, @car]) do |c| %>
+      <div class="form-inputs">
+      <%= c.input :brand %>
+      <%= c.input :model %>
+      <%= c.input :price %>
+      <%= c.input :address %>
+      <%= c.input :description %>
+      <%= c.input :photo %>
+      <%= c.input :photo_cache, as: :hidden %>
+      </div>
   <div class="form-actions">
-    <%= f.button :submit, "Log in" %>
+   <button class="button-form"><%= c.button :submit, "Submit" %></button>
   </div>
-<% end %>
-<%= render "devise/shared/links" %>
-    </div>
+  <% end %>
+ </div>
   </div>
 </div>
