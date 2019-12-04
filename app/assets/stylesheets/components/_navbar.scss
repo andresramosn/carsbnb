@@ -14,6 +14,11 @@
 
 .nav-link {
   margin-right: 40px;
+  border-bottom: 2px solid white !important;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid black !important;
 }
 
 .nav-button {
