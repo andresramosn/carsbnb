@@ -1,16 +1,19 @@
-<div class="web-container">
-  <h1 class="h1-results"><%= Car.count %> cars in Barcelona</h1>
-  <div class="cars-list">
-    <% @cars.each do |car|  %>
-      <div class="car-card">
-        <%= link_to car_path(car) do%>
-        <%= cl_image_tag car.photo %>
-        <div class="car-price">
-          <p><%= car.brand %>  <%= car.model %></p>
-          <p>€ <%= car.price %> / day</p>
+
+<div class="container">
+  <h1 id="h1-results"><%= Car.count %> cars in Barcelona</h1>
+  <div class="row">
+      <% @cars.each do |car| %>
+        <div class="col-xs-12 col-md-4 m-0 p-0">
+            <%= link_to car_path(car) do %>
+            <div class="car-card">
+              <%= cl_image_tag car.photo, class: "card-photo" %>
+              <div class="card-info">
+                <p><%= car.brand %>  <%= car.model %></p>
+                <p>€ <%= car.price %> / day</p>
+              </div>
+            </div>
+            <% end %>
         </div>
-        <% end %>
-      </div>
     <% end %>
   </div>
 </div>
