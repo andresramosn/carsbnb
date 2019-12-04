@@ -1,0 +1,33 @@
+.main-cta {
+  color: white;
+  padding: 12px 65px;
+  border-radius: 4px;
+  background: #FB7580;
+  transition: background 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  &:hover {
+    color: white;
+    background-color: #fb7580b5;
+  }
+}
+
+.ctas-show-page {
+  display: flex;
+  justify-content: space-between;
+  vertical-align: middle;
+  a {
+    padding-top: 12px;
+  }
+}
+
+.price-button {
+  display: flex;
+  justify-content: space-between;
+}
+
+#price {
+  margin-right: 18px;
+  padding-top: 12px;
+}

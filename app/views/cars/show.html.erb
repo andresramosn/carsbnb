@@ -1,4 +1,12 @@
 <div class="container">
+  <div class="ctas-show-page">
+    <%= link_to "Back to all cars", cars_path %>
+    <div class="price-button">
+      <p id="price"><%= @car.price %>€/day</p>
+      <%= link_to "Book", cars_path, class: "main-cta" %>
+    </div>
+  </div>
+  <br>
   <div class="card-trip">
     <%= cl_image_tag @car.photo %>
     <div class="card-trip-infos">
