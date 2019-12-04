@@ -11,7 +11,8 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <%if user_signed_in? == true %>
-              <%= link_to "Rent your car", new_user_car_path(current_user), class: "nav-button" %>
+            <li id="welcome-message">Welcome <%= current_user.email %> </li>
+            <li><%= link_to "Rent your car", new_user_car_path(current_user), class: "nav-button" %> </li>
            <% else %>
            <li> <%= link_to "Sign up", new_user_registration_path(@user_id), class: "nav-link" %> </li>
            <li> <%= link_to "Log in", new_user_session_path(@user_id), class: "nav-link" %> </li>
