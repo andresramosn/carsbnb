@@ -14,4 +14,45 @@
 
 .nav-link {
   margin-right: 40px;
+  border-bottom: 2px solid white !important;
+}
+
+.nav-link:hover {
+  border-bottom: 2px solid black !important;
+}
+
+.nav-button {
+  min-height: 40px;
+  min-width: 40px;
+  padding: 8px 24px;
+  font-size: 16px;
+  line-height: 20px;
+  position: relative;
+  display: inline-flex;
+  margin: 0px 20px;
+  text-decoration: none !important;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #dbd8dc;
+  color: #4a506d;
+  font-family: Roboto;
+  font-weight: 600;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px 0 rgba(0,0,0,.08);
+  background-color: #fff;
+  fill: #61366b;
+  cursor: pointer;
+  user-select: none;
+  appearance: none;
+}
+
+.nav-button:hover {
+  border: 2px solid black;
+  color: black;
+}
+
+#welcome-message {
+  padding: 8px 24px;
+  font-family: Roboto;
 }

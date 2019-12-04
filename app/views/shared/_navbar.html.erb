@@ -11,17 +11,18 @@
     <ul class="navbar-nav mr-auto">
       <li class="nav-item active">
         <%if user_signed_in? == true %>
-              <%= link_to "Add a car", new_user_car_path(current_user), class: "nav-link" %>
+            <li id="welcome-message">Welcome <%= current_user.email %> </li>
+            <li><%= link_to "Rent your car", new_user_car_path(current_user), class: "nav-button" %> </li>
            <% else %>
            <li> <%= link_to "Sign up", new_user_registration_path(@user_id), class: "nav-link" %> </li>
-           <li> <%= link_to "Sign in", new_user_session_path(@user_id), class: "nav-link" %> </li>
+           <li> <%= link_to "Log in", new_user_session_path(@user_id), class: "nav-link" %> </li>
+           <li> <%= link_to "Rent your car", new_user_session_path(@user_id), class: "nav-button" %> </li>
            <%end%>
       </li>
       <%if user_signed_in? == true %>
         <li class="nav-item dropdown">
           <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-            <%= link_to "Action", "#" , class: "dropdown-item" %>
             <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
       <% else %>
           <%=  %>
@@ -31,3 +32,5 @@
     </ul>
   </div>
 </div>
+
+
