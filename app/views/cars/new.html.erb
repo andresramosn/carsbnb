@@ -1,21 +1,15 @@
-<div class="container">
-  <div class="row justify-content-center">
-    <div class="col-xs-12 col md-4">
-      <h2>Upload your car</h2>
-      <%= simple_form_for([@user, @car]) do |c| %>
-      <div class="form-inputs">
-      <%= c.input :brand %>
-      <%= c.input :model %>
-      <%= c.input :price %>
-      <%= c.input :address %>
-      <%= c.input :description %>
-      <%= c.input :photo %>
-      <%= c.input :photo_cache, as: :hidden %>
-      </div>
-  <div class="form-actions">
-   <button class="button-form"><%= c.button :submit, "Submit" %></button>
-  </div>
-  <% end %>
- </div>
-  </div>
-</div>
+<h1>Upload your car</h1>
+
+<%= simple_form_for([@user, @car]) do |c| %>
+<%= c.input :brand %>
+<%= c.input :model %>
+<%= c.input :price %>
+<%= c.input :address %>
+<%= c.input :description %>
+<%= c.input :photo %>
+<%= c.input :photo_cache, as: :hidden %>
+<%= c.submit  %>
+<% end %>
+
+
+
