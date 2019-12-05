@@ -32,10 +32,10 @@ class CarsController < ApplicationController
   def show
     @car = Car.find(params[:id])
     @reservation = Reservation.new
-    @markers = {
+    @markers = [{
       lat: @car.latitude,
       lng: @car.longitude
-    }
+    }]
   end
 
   def destroy
