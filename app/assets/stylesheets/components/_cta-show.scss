@@ -14,13 +14,22 @@
   }
 }
 
+#back {
+  color: rgba(0, 0, 0, 0.5)
+}
+
 .ctas-show-page {
   display: flex;
   justify-content: space-between;
   vertical-align: middle;
+  border-radius: 4px;
   a {
-    padding-top: 12px;
+    padding-top: 18px;
   }
+  border: 2px solid;
+  border-color: rgba(0,0,0,0.05);
+  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  padding: 10px;
 }
 
 .price-button {
@@ -31,9 +40,13 @@
 #price {
   margin-right: 18px;
   padding-top: 12px;
+<<<<<<< HEAD
   font-size: 18px;
 }
 
 .border {
   border-radius: 4px;
+=======
+  font-size: 24px;
+>>>>>>> master
 }
