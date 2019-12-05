@@ -16,6 +16,8 @@ gem 'webpacker'
 gem 'devise'
 gem 'geocoder'
 gem 'mapbox'
+gem 'pg_search', '~> 2.3.0'
+
 
 gem 'dotenv-rails', groups: [:development, :test]
 gem 'cloudinary', '~> 1.9.1'
