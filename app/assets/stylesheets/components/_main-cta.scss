@@ -1,14 +1,30 @@
+// .main-cta {
+//   color: white;
+//   padding: 12px 65px;
+//   border-radius: 4px;
+//   background: #4A506D;
+//   transition: background 0.3s ease;
+//   font-size: 20px;
+//   text-align: center;
+//   text-decoration: none !important;
+
+//   &:hover {
+//     color: white;
+//     background-color: #848aa5;
+//   }
+// }
 .main-cta {
   color: white;
-  padding: 12px 65px;
+  height: 50px;
+  padding: 12px 68px;
   border-radius: 4px;
-  background: #4A506D;
+  background: #FB7580;
   transition: background 0.3s ease;
   font-size: 20px;
   text-align: center;
   text-decoration: none !important;
   &:hover {
     color: white;
-    background-color: #848aa5;
+    background-color: #fb7580b5;
   }
 }

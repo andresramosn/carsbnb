@@ -1,43 +1,1 @@
-.main-cta {
-  color: white;
-  padding: 12px 65px;
-  border-radius: 4px;
-  background: #FB7580;
-  transition: background 0.3s ease;
-  font-size: 20px;
-  text-align: center;
-  text-decoration: none !important;
-  &:hover {
-    color: white;
-    background-color: #fb7580b5;
-  }
-}
-
-#back {
-  color: rgba(0, 0, 0, 0.5)
-}
-
-.ctas-show-page {
-  display: flex;
-  justify-content: space-between;
-  vertical-align: middle;
-  border-radius: 4px;
-  a {
-    padding-top: 18px;
-  }
-  border: 2px solid;
-  border-color: rgba(0,0,0,0.05);
-  // box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  padding: 10px;
-}
-
-.price-button {
-  display: flex;
-  justify-content: space-between;
-}
-
-#price {
-  margin-right: 18px;
-  padding-top: 12px;
-  font-size: 24px;
-}
+.main-cta {  color: white;  height: 50px;  padding: 12px 68px;  border-radius: 4px;  background: #FB7580;  transition: background 0.3s ease;  font-size: 20px;  text-align: center;  text-decoration: none !important;  &:hover {    color: white;    background-color: #fb7580b5;  }}.ctas-show-page {  display: flex;  justify-content: space-between;  vertical-align: middle;  a {    padding-top: 12px;  }}.price-button {  display: flex;  justify-content: space-between;}#price {  margin-right: 18px;  padding-top: 12px;  font-size: 18px;}.border {  border-radius: 4px;}
