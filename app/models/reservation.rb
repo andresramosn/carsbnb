@@ -1,4 +1,4 @@
 class Reservation < ApplicationRecord
-  has_many :cars
-  has_many :users
+  belongs_to :car
+  belongs_to :user
 end
