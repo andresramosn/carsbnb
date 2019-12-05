@@ -1,6 +1,7 @@
 .main-cta {
   color: white;
-  padding: 12px 65px;
+  height: 50px;
+  padding: 12px 68px;
   border-radius: 4px;
   background: #FB7580;
   transition: background 0.3s ease;
@@ -39,5 +40,10 @@
 #price {
   margin-right: 18px;
   padding-top: 12px;
+  font-size: 18px;
+}
+
+.border {
+  border-radius: 4px;
   font-size: 24px;
 }

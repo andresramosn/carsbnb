@@ -31,6 +31,7 @@ class CarsController < ApplicationController
 
   def show
     @car = Car.find(params[:id])
+    @reservation = Reservation.new
     @markers = {
       lat: @car.latitude,
       lng: @car.longitude
