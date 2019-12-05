@@ -1,0 +1,20 @@
+<h1>Here you can see the status of your reservation</h1>
+
+<% # renter %>
+<% # if reservation_user_id = current_user_id => (renter), then change status: %>
+<% #from pending to cancel & confirmed to cancel %>
+<% if @reservation.user_id == current_user.id %>
+<div>
+  <%= @reservation.status%>
+<button type="button" class="btn btn-danger">cancel</button>
+<i class="fas fa-sync"></i>
+<% # car owner %>
+<% # if reservation_user_id != current_user_id => (onwer), then change status: %>
+<% #from pending to confirmed & from pending to rejected & from confirmed to cancel %>
+<% elsif @reservation.status == "pending" %>
+<h2 style="color: orange"><%= @reservation.status %></h2>
+<%= link_to "approve", approve_path, {method: :patch}%>
+<%= link_to "reject", reject_path, {method: :patch}%>
+<% else %>
+<button type="button" class="btn btn-danger">cancel</button>
+<% end %>

@@ -21,6 +21,30 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.find(params[:id])
   end
 
+  def edit
+    @reservation = Reservation.find(params[:id])
+  end
+
+  def reject
+    @reservation = Reservation.find(params[:id])
+    @reservation.status = "rejected"
+    @reservation.save
+
+  end
+
+  def cancel
+    @reservation = Reservation.find(params[:id])
+    @reservation.status = "cancelled"
+    @reservation.save
+  end
+
+  def approve
+    @reservation = Reservation.find(params[:id])
+    @reservation.status = "approved"
+    @reservation.save
+
+  end
+
   private
 
   def reservation_params
