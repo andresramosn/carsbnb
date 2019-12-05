@@ -15,7 +15,7 @@ puts 'Creating users'
 
   brand = ["Toyota", "Kia", "Renault", "Seat", "BMW", "Mercedes Benz"]
   model = ["Corolla", "Sportage", "Clio", "Leon", "x1", "CLA"]
-  address = ["bailen 152, barcelona", "corsega 523, barcelona", "plaza real 100, barcelona", "mallorca 1432, barcelona", "manigua 542, barcelona", "proser del castro 122, barcelona"]
+  address = ["16 Villa Gaudelet, Paris", "corsega 523, barcelona", "plaza real 100, barcelona", "mallorca 1432, barcelona", "manigua 542, barcelona", "proser del castro 122, barcelona"]
   photo_path ="app/assets/images/"
   photo = ["https://images.unsplash.com/photo-1521657142174-c7353dc830cd?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1351&q=80", "https://images.unsplash.com/photo-1524459588802-54e510a87b85?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1334&q=80", "https://images.unsplash.com/photo-1554176332-0fad4400e3aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80", "https://images.unsplash.com/photo-1494009041405-cb00eb38b186?ixlib=rb-1.2.1&auto=format&fit=crop&w=1225&q=80", "https://images.unsplash.com/photo-1504455637435-8d1a13cd8a93?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80", "https://images.unsplash.com/photo-1496759350031-2bed48f0678e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1584&q=80"]
   description = ["4 Seats, 2 Doors, Air Conditioning, Manual gearbox", "Sporty car, 4 Seats, 2 Doors, Air Conditioning, Manual gearbox", "Sporty car, 4 Seats, 2 Doors, Air Conditioning, Automatic gearbox", "Classic car, 4 Seats, 4 Doors, Air Conditioning, Automatic gearbox", "Sporty car, 4 Seats, 4 Doors, Air Conditioning, Automatic gearbox", "Sporty car, 4 Seats, 4 Doors, Air Conditioning, Secuential gearbox"]
