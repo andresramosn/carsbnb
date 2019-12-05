@@ -1,6 +1,6 @@
 
 <div class="container">
-  <h1 id="h1-results"><%= Car.count %> cars in Barcelona</h1>
+  <h1 id="h1-results"><%= Car.search_by_address(params[:query]).count %> cars found</h1>
   <div class="row">
       <% @cars.each do |car| %>
         <div class="col-xs-12 col-md-4 m-0 p-0">
