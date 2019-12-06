@@ -15,5 +15,5 @@ Rails.application.routes.draw do
   patch "reject/reservations/:id", to: "reservations#reject", as: "reject"
   patch "confirm/reservations/:id", to: "reservations#confirm", as: "confirm"
   patch "cancel/reservations/:id", to: "reservations#cancel", as: "cancel"
-
+# update
 end
