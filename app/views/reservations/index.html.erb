@@ -3,34 +3,45 @@
     <div class="col-12 col-md-6">
       <h2>Your reservations</h2>
       <%= link_to "Refresh", reservations_path%>
-      <ul class="list-group">
       <% @user_reservations .each do |reservation| %>
-      <li class="list-group-item"><%="#{Car.find(reservation.car_id).model} / #{Car.find(reservation.car_id).brand} #{reservation.start_date} - #{reservation.end_date}: #{reservation.status}"%>
-      <% if reservation.status != "cancelled"%>
-      <%= link_to "cancel", cancel_path(reservation.id), {method: :patch}%>
-      </li>
+      <div class="car-reservation-card">
+        <img src= <%= "#{Car.find(reservation.car_id).photo}" %>>
+        <div class="car-reservation-info">
+          <h2> <%= "#{Car.find(reservation.car_id).model} / #{Car.find(reservation.car_id).brand}" %></h2>
+          <p><%="#{reservation.start_date} - #{reservation.end_date}"%></p>
+          <p><%="#{reservation.status}"%></p>
+          <p>
+            <% if reservation.status != "cancelled"%>
+            <%= link_to "cancel", cancel_path(reservation.id), {method: :patch}%>
+            <% end %>
+          </p>
+        </div>
+      </div>
       <% end %>
-      <% end %>
-      </ul>
     </div>
+
+
   <div class="col-12 col-md-6">
-      <h2>Your car retals</h2>
-      <% @user_cars.each do |car| %>
-      <ul class="list-group">
+    <h2>Your car rentals</h2>
+    <% @user_cars.each do |car| %>
       <% @reservations.each do |booking| %>
-      <% if booking.car_id == car.id %>
-      <li class="list-group-item"><%="#{car.brand} - #{car.model}: #{booking.start_date} - #{User.find(booking.user_id).email} #{booking.end_date}: #{booking.status}" %>
-      <% if booking.status == "pending" %>
-      <%= link_to "confirm", confirm_path(booking.id), {method: :patch}%>
-      <%= link_to "reject", reject_path(booking.id), {method: :patch}%>
+        <% if booking.car_id == car.id %>
+          <div class="car-reservation-card">
+            <img src= <%= "#{car.photo}" %>>
+            <div class="car-reservation-info">
+              <h2><%="#{car.brand} - #{car.model}" %></h2>
+              <p><%="#{User.find(booking.user_id).email}" %></p>
+              <p><%="#{booking.start_date} - #{booking.end_date}" %></p>
+              <p><%="#{booking.status}" %></p>
+                <% if booking.status == "pending" %>
+                  <%= link_to "confirm", confirm_path(booking.id), {method: :patch}%>
+                  <%= link_to "reject", reject_path(booking.id), {method: :patch}%>
+                <% end %>
+            </div>
+          </div>
+        <% end %>
       <% end %>
-      </li>
-      <% end %>
-      <% end %>
-      <% end %>
-      </ul>
+    <% end %>
   </div>
 </div>
 </div>
-
-
