@@ -1,8 +1,8 @@
-.main-cta {
+.search-btn {
   color: white;
-  padding: 12px 65px;
-  border-radius: 4px;
-  background: #4A506D;
+  padding: 3px 25px;
+  border-radius: 0px;
+  background: black;
   transition: background 0.3s ease;
   font-size: 20px;
   text-align: center;
@@ -10,5 +10,7 @@
   &:hover {
     color: white;
     background-color: #848aa5;
-  }
 }
+}
+
+

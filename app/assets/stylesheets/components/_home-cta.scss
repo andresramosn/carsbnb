@@ -1,0 +1,52 @@
+.home-cta {
+  color: white;
+  padding: 12px 65px;
+  border-radius: 4px;
+  background: #FB7580;
+  transition: background 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+  border: none;
+  text-decoration: none !important;
+  &:hover {
+    color: white;
+    background-color: #848aa5;
+  }
+}
+
+<<<<<<< HEAD:app/assets/stylesheets/components/_main-cta.scss
+.main-cta-login {
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  background: #FB7580;
+  transition: background 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 15px;
+  &:hover {
+    color: white;
+    background-color: #848aa5;
+  }
+}
+
+.main-cta-login1 {
+
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  background: #FB7580;
+  transition: background 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 15px;
+  &:hover {
+    color: white;
+    background-color: #848aa5;
+  }
+}
+
+=======
+>>>>>>> c53346c16c7d0751bf37cfa093b2ba87f58f2b14:app/assets/stylesheets/components/_home-cta.scss
