@@ -7,7 +7,7 @@ class ReservationsController < ApplicationController
     @reservation.user = current_user
     @reservation.car = @car
     if @reservation.save
-      redirect_to edit_car_reservation_path(@reservation)
+      redirect_to car_reservation_path(@reservation)
     else
       render :new
     end

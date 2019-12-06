@@ -4,11 +4,12 @@
 <div class="web-container">
   <h1>Rent the perfect car</h1>
   <p>Search in seconds among thousands of cars</p>
-  <%= form_tag cars_path, class: "search", method: :get do %>
+  <div id="search-container"><%= form_tag cars_path, class: "search", method: :get do %>
         <%= text_field_tag :query,
           params[:query],
           class: "form-control",
           placeholder: "Enter location"%>
           <%end%>
-  <%= link_to "See all cars", cars_path, class: "main-cta" %>
+  </div>
+  <%= link_to "See all cars", cars_path, class: "home-cta" %>
 </div>
