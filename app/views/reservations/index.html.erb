@@ -1,6 +1,7 @@
 <h1>Your reservations</h1>
 
 <h3>Future trips</h3>
+<%= link_to "Refresh", reservations_path%>
 <ul class="list-group">
 <% @user_reservations .each do |reservation| %>
 <li class="list-group-item"><%="#{Car.find(reservation.car_id).model} / #{Car.find(reservation.car_id).brand} #{reservation.start_date} - #{reservation.end_date}: #{reservation.status}"%>
@@ -12,14 +13,15 @@
 </ul>
 <br>
 <h3>Your car reservations</h3>
-
 <% @user_cars.each do |car| %>
 <ul class="list-group">
 <% @reservations.each do |booking| %>
   <% if booking.car_id == car.id %>
   <li class="list-group-item"><%="#{car.brand} - #{car.model}: #{booking.start_date} - #{User.find(booking.user_id).email} #{booking.end_date}: #{booking.status}" %>
+  <% if booking.status == "pending" %>
   <%= link_to "confirm", confirm_path(booking.id), {method: :patch}%>
   <%= link_to "reject", reject_path(booking.id), {method: :patch}%>
+  <% end %>
   </li>
   <% end %>
   <% end %>
