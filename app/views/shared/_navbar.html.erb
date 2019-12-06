@@ -1,11 +1,14 @@
 
 <div class="navbar shadow-sm navbar-expand-sm navbar-light navbar-lewagon">
+  <div class = "d-flex justify-content-left">
   <%= link_to root_path, class: "navbar-brand" do %>
   <%= image_tag "logo.png" %>
   <% end %>
-  <div>
+
     <% if controller_name === "pages" %>
-       <%= puts "CarsBnb" %>
+      <h2 class="logo-type"> CarsBnB </h2>
+  </div>
+  <div>
     <% else %>
       <%= form_tag cars_path, class: "search", method: :get do %>
         <%= text_field_tag :query,
@@ -13,11 +16,10 @@
           class: "form-control",
           placeholder: "Enter location"%>
         <div class="search-button">
-         <%= submit_tag "Search", class: "btn btn-dark" %>
+         <%= submit_tag "Search", class: "search-btn"%>
         </div>
+      <% end %>
     <% end %>
-    <% end %>
-
   </div>
 
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
