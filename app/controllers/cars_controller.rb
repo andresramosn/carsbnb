@@ -6,6 +6,7 @@ class CarsController < ApplicationController
   end
 
   def create
+    # hello
     @car = Car.new(car_params)
     @car.user = @user
     if @car.save
@@ -23,7 +24,6 @@ class CarsController < ApplicationController
       @cars = Car.geocoded #returns cars with coordinates
 
       @cars = Car.where("address ILIKE ?", "%#{params[:query]}%")
-
 
       @markers = @cars.map do |car|
       {

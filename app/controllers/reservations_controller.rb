@@ -9,7 +9,8 @@ class ReservationsController < ApplicationController
     if @reservation.save
       redirect_to reservation_path(@reservation)
     else
-      render :new
+      # hello
+      render "cars/show"
     end
   end
 
