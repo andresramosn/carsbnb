@@ -5,7 +5,7 @@
 
 
 <div class="card col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto form p-4 " style="width: auto; ">
-  <h5 class="card-title text-center"><strong>Thank you, <%=current_user.first_name%>, for the reservation!</strong></h5>
+  <h5 class="card-title text-center"><strong>Thank you <%=current_user.first_name%> for the reservation!</strong></h5>
  <%= cl_image_tag @reservation.car.photo, class: "car" %>
   <div class="card-body">
 
