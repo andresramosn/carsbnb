@@ -5,7 +5,7 @@
   <% elsif @cars.count == 1 %>
     <h1 id="h1-results"><%= Car.search_by_address(params[:query]).count %> car found</h1>
   <% elsif Car.search_by_address(params[:query]).count == 0 %>
-    <h1 id="h1-results"> No cars found, please try another location or browse our entire selection.</h1>
+    <h1 id="h1-results"> No cars found, please try another location.</h1>
   <% end %>
   <div class="row">
     <div class="col-12 col-md-8">
