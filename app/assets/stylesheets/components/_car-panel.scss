@@ -1,33 +1,32 @@
 .car-reservation-card {
   overflow: hidden;
-  height: 120px;
+  height: 190px;
   background: white;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   display: flex;
   align-items: center;
   margin-top: 12px;
 }
-
 .car-reservation-card img {
   height: 100%;
-  width: 120px;
+  width: 188px;
   object-fit: cover;
 }
-
 .car-reservation-card h2 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
   margin: 0;
 }
-
 .car-reservation-card p {
-  font-size: 12px;
+  font-size: 16px;
   line-height: 1.4;
   opacity: .7;
   margin-bottom: 0;
   margin-top: 8px;
 }
-
 .car-reservation-card .car-reservation-info {
   padding: 16px;
+}
+#car-rentals {
+  margin-bottom: 44px;
 }

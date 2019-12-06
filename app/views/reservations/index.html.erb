@@ -19,10 +19,8 @@
       </div>
       <% end %>
     </div>
-
-
   <div class="col-12 col-md-6">
-    <h2>Your car rentals</h2>
+    <h2 id="car-rentals">Your car rentals</h2>
     <% @user_cars.each do |car| %>
       <% @reservations.each do |booking| %>
         <% if booking.car_id == car.id %>
@@ -34,8 +32,10 @@
               <p><%="#{booking.start_date} - #{booking.end_date}" %></p>
               <p><%="#{booking.status}" %></p>
                 <% if booking.status == "pending" %>
-                  <%= link_to "confirm", confirm_path(booking.id), {method: :patch}%>
-                  <%= link_to "reject", reject_path(booking.id), {method: :patch}%>
+                    <div class="d-flex justify-content-between" >
+                   <%= link_to "confirm", confirm_path(booking.id), {method: :patch}%>
+                     <%= link_to "reject", reject_path(booking.id), {method: :patch}%>
+                    </div>
                 <% end %>
             </div>
           </div>
