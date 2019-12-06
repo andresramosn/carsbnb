@@ -6,6 +6,7 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 puts 'Cleaning database'
+Reservation.destroy_all
 Car.destroy_all
 User.destroy_all
 
@@ -29,9 +30,15 @@ counter = 0
   user = User.create(email: random_email, password: random_password)
   #create cars
   random_price = (1..9).to_a.sample(2).join.to_i
-  car = Car.new(price: random_price, model: model[counter], brand: brand[counter], address: address[counter], description: description[counter], user_id: user.id)
+  car = Car.new(
+    price: random_price,
+    model: model[counter],
+    brand: brand[counter],
+    address: address[counter],
+    description: description[counter],
+    user_id: user.id)
   car.remote_photo_url = photo[counter]
-  car.save
+  car.save!
   counter += 1
 end
 
