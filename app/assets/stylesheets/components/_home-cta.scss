@@ -1,14 +1,16 @@
-.main-cta {
+.home-cta {
   color: white;
   padding: 12px 65px;
   border-radius: 4px;
-  background: #4A506D;
+  background: #FB7580;
   transition: background 0.3s ease;
   font-size: 20px;
   text-align: center;
+  border: none;
   text-decoration: none !important;
   &:hover {
     color: white;
     background-color: #848aa5;
   }
 }
+
