@@ -4,18 +4,18 @@
 
 
 
-<div class="card col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto form p-4 " style="width: auto; ">
+<div class="card col-xl-5 col-lg-6 col-md-8 col-sm-10 mx-auto form p-4 " style="width: auto; border-color: #80D6BD; border-radius: 10px;">
   <h5 class="card-title text-center"><strong>Thank you <%=current_user.first_name%> for the reservation!</strong></h5>
  <%= cl_image_tag @reservation.car.photo, class: "car" %>
   <div class="card-body">
 
-    <p1 class="card-text">Your reservation is now pending the car's owner review</p1>
+    <p1 class="card-text text-center">Your reservation is now pending the car's owner review</p1>
   </div>
   <ul class="list-group list-group-flush">
     <li class="list-group-item"><strong>Start date:</strong> <%= @reservation.start_date%></li>
-    <li class="list-group-item"><strong>End date:</strong> <%= @reservation.end_date%></li>
-     <li class="list-group-item"><strong>Total price:</strong> <%= cost %>€</li>
-    <li class="list-group-item"><strong>Confirmation number:</strong> <%= @reservation.id%></li>
+    <li class="list-group-item"><strong>End date: </strong> <%= @reservation.end_date%></li>
+     <li class="list-group-item"><strong>Total price: </strong> <%= cost %>€</li>
+    <li class="list-group-item"><strong>Confirmation number: </strong> <%= @reservation.id%></li>
   </ul>
   <div class="card-body">
     <p href="#"> You may review your pending requests in your <%= link_to "dashboard", reservations_path %>.</p>
