@@ -12,8 +12,8 @@ Rails.application.routes.draw do
 
   end
   resources :reservations, only: [:index, :show]
-  patch "reject/cars/:id/reservations/:id", to: "reservations#reject", as: "reject"
-  patch "approve/cars/:id/reservations/:id", to: "reservations#approve", as: "approve"
-  patch "cancel/cars/:id/reservations/:id", to: "reservations#cancel", as: "cancel"
+  patch "reject/reservations/:id", to: "reservations#reject", as: "reject"
+  patch "confirm/reservations/:id", to: "reservations#confirm", as: "confirm"
+  patch "cancel/reservations/:id", to: "reservations#cancel", as: "cancel"
 
 end
