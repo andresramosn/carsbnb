@@ -15,6 +15,8 @@ class ReservationsController < ApplicationController
 
   def index
     @reservations = Reservation.all
+    @user_reservations = Reservation.where(user_id: current_user.id)
+    @user_cars = Car.where(user_id: current_user.id)
   end
 
   def show
@@ -29,20 +31,21 @@ class ReservationsController < ApplicationController
     @reservation = Reservation.find(params[:id])
     @reservation.status = "rejected"
     @reservation.save
-
+    redirect_to reservations_path
   end
 
   def cancel
     @reservation = Reservation.find(params[:id])
     @reservation.status = "cancelled"
     @reservation.save
+    redirect_to reservations_path
   end
 
-  def approve
+  def confirm
     @reservation = Reservation.find(params[:id])
-    @reservation.status = "approved"
+    @reservation.status = "confirmed"
     @reservation.save
-
+    redirect_to reservations_path
   end
 
   private
