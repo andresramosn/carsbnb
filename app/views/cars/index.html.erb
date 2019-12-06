@@ -1,6 +1,12 @@
 
 <div class="container">
-  <h1 id="h1-results"><%= Car.search_by_address(params[:query]).count %> cars found</h1>
+  <% if Car.search_by_address(params[:query]).count > 1 %>
+    <h1 id="h1-results"><%= Car.search_by_address(params[:query]).count %> cars found</h1>
+  <% elsif Car.search_by_address(params[:query]).count == 1 %>
+    <h1 id="h1-results"><%= Car.search_by_address(params[:query]).count %> car found</h1>
+  <% else %>
+    <h1 id="h1-results"> No cars where found please try another location</h1>
+  <% end %>
   <div class="row">
       <% @cars.each do |car| %>
         <div class="col-xs-12 col-md-4 m-0 p-0">
