@@ -4,10 +4,6 @@
       <div class="d-flex justify-content-between" >
         <div class="mt-3">
 
-  <% days = (@reservation.start_date..@reservation.end_date).count %>
-  <p style="font-size:20px;">Total:</p>
-  <p style="font-size:20px;"><%= days %></p>
-
 
   <h1>Thank you, <%=current_user.first_name%> for the reservation!</h1>
   <br>
