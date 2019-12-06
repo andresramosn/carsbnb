@@ -33,7 +33,7 @@ ActiveRecord::Schema.define(version: 2019_12_05_110021) do
   create_table "reservations", force: :cascade do |t|
     t.date "start_date"
     t.date "end_date"
-    t.string "status", default: "pending"
+    t.string "status"
     t.bigint "car_id"
     t.bigint "user_id"
     t.datetime "created_at", null: false

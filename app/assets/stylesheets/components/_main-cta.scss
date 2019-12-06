@@ -2,7 +2,7 @@
   color: white;
   padding: 12px 65px;
   border-radius: 4px;
-  background: #4A506D;
+  background: #FB7580;
   transition: background 0.3s ease;
   font-size: 20px;
   text-align: center;
@@ -12,3 +12,37 @@
     background-color: #848aa5;
   }
 }
+
+.main-cta-login {
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  background: #FB7580;
+  transition: background 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 15px;
+  &:hover {
+    color: white;
+    background-color: #848aa5;
+  }
+}
+
+.main-cta-login1 {
+
+  color: white;
+  width: 100%;
+  border-radius: 4px;
+  background: #FB7580;
+  transition: background 0.3s ease;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none !important;
+  margin-bottom: 15px;
+  &:hover {
+    color: white;
+    background-color: #848aa5;
+  }
+}
+
